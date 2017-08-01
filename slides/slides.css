@@ -1,0 +1,22 @@
+.remark-slide-content > h1 {
+        width: 100%;
+        padding-left: 0.5em;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        background: #00cc00;
+        color: white;
+}
+.remark-slide-content.center.middle > h1 {
+        border-radius: .2em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+}
+
+ol { counter-reset: item; }
+ol li { display: block; }
+ol li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: green;
+}
+
